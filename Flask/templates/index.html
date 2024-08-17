@@ -1,0 +1,122 @@
+
+<html lang="en">
+<head>
+    <title>Employee Productivity Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <!-- <link rel="stylesheet" href="style_n.css"> -->
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+   <div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo"></h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#how it works">HOW IT WORKS</a></li>
+            </ul>
+        </div>
+
+
+    </div> 
+
+
+    <section id="home" >
+    <form method="POST" , action="{{url_for('predict')}}">
+    <div class="content">
+        <h1>Employee Performance & <br><span>Prediction</span> <br></h1>
+        <p class="par">
+            Any business's success depends on its employee. Businesses that realizes this are
+            concerned about employee productivity. Productivity  has compounding  effect   on 
+            different levels of workspace. Hence analysis of performance of employee in any 
+            organisation is need of the hour. Employee performance prediction using machine 
+            learning involves developing a model that can assess and forecast an employee's 
+            future performance based on historical data and various influencing factors. The 
+            process begins with collecting relevant data, such as demographic details, job-
+            related information, past performance metrics, and behavioral patterns.
+            Once trained, the model can predict future performance, helping organizations 
+            identify high-performing employees, those who may need additional support, or 
+            even those at risk of leaving. The model's accuracy is continually evaluated 
+            and improved by adjusting parameters and using techniques like cross-validation. 
+            Ethical considerations, such as ensuring fairness, avoiding bias, and maintaining
+             data privacy, are integral to the process. By leveraging machine learning models,
+              organizations can make more informed decisions in talent management, leading to 
+              better resource allocation, improved employee development programs, and overall 
+              enhanced organizational performance.</p>
+            <!-- Predict Button -->
+            <button class="cn" value="predict">Predict</button>
+    </div>
+    </form>
+    </section>
+
+
+    <hr>
+    <hr>
+    <section id="about" >
+    <div class="content">
+        <h1>About Machine Learning & <br><span>Model's</span> <br></h1>
+        <p class="par">
+            Machine learning (ML) models are powerful tools that enable organizations to analyze vast amounts of data 
+            and uncover patterns that would be difficult or impossible to detect manually. In the context of employee
+            performance prediction, these models can be used to forecast an employee's future performance based on a 
+            variety of factors such as historical performance data, job role, tenure, training participation, and even
+            behavioral indicators like attendance and engagement levels.
+
+            An employee performance prediction model is a data-driven tool used by organizations to assess and 
+            predict the future performance of their employees based on historical data and various performance 
+            metrics.Such leverage machine learning and statistical techniques to analyze employee-related data 
+            and generate that can help improve workforce management and organizational effectiveness.</p>
+    </div>
+    </section>
+
+    <hr>
+
+
+
+    
+    <hr>
+    <section id="how it works" >
+    <div class="content">
+        <h1>Employee Prediction Model & <br><span>How It Works</span> <br></h1>
+
+    <ol>
+        <li>
+            <h3>Input Data:</h3>
+            <p>The first step involves gathering relevant data about employees.
+                <br> Enter all Employee related as instructed into the form below.  
+            <br>This data is essential for our model to make a precise classification.
+            <br> Ensure you provide all required details for the best results.      
+        </li>
+
+        <li>
+            <h3>Submit Your Data:</h3>
+            <p>Click the 'Submit' button to send your data to our model.
+            <br> Thesubmission process securely transmits your information for analysis.</p>
+        </li>
+
+        <li>
+            <h3>Data Processing:</h3>
+            <p>Our advanced machine learning model processes the submitted data.
+                <br>
+             Trained on the Employee performance prediction dataset, the model analyzes the characteristics of your galaxy to determine its subclass.</p>
+        </li>
+
+        <li>
+            <h3>Receive Prediction:</h3>
+            <p>The predictions generated by the model can be interpreted to provide actionable insights for HR teams.</p>
+        </li>
+    </ol>
+
+    </div>
+    </section>
+
+
+    </div>
+    </div>
+</div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

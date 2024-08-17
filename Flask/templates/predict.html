@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee Productivity Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- <link rel="stylesheet" href="style_n.css"> -->
+    <script>
+
+  </script>
+</head>
+<body>
+   <div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo"></h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SERVICES</a></li>
+            </ul>
+        </div>
+    </div> 
+
+
+    <div class="container">
+
+        <h1 class="form-title"></h1>
+
+        <form method="POST" action="{{url_for('evaluate')}}">
+          <div class="main-user-info">
+
+              <div class="user-input-box">
+  
+                <label for="quarter">quarter</label>
+  
+                <select id="quarter"  name="quarter" required>
+                  <option value="" style="color: gray;" disabled selected>Select a Quarter</option>
+                  <option value="Quarter1">Quarter1</option>
+                  <option value="Quarter2">Quarter2</option>
+                  <option value="Quarter3">Quarter3</option>
+                  <option value="Quarter4">Quarter4</option>
+                  <option value="Quarter5">Quarter5</option>
+                </select>
+  
+              </div>
+  
+              <div class="user-input-box">
+  
+                <label for="department">department</label>
+  
+                <select id="department" name="department" required>
+                  <option value="" style="color: gray;" disabled selected>Choose a department</option>
+                  <option value="Sewing">Sewing</option>
+                  <option value="Finishing">Finishing</option>
+                </select>
+              </div>
+  
+              <div class="user-input-box">
+  
+                  <label for="day">day</label>
+  
+                  <select id="day" name="day" required>
+                    <option value="" style="color: gray;" disabled selected>Select a day</option>
+                      <option value="Monday">Monday</option>
+                      <option value="Tuesday">Tuesday</option>
+                      <option value="Wednesday">Wednesday</option>
+                      <option value="Thursday">Thursday</option>
+                      <option value="Saturday">Saturday</option>
+                      <option value="Sunday">Sunday</option>
+                    </select>
+  
+                
+                <!-- <input type=""
+                        id="day"
+                        name="day"
+                        placeholder="Enter day"/> -->
+              
+                 
+              </div>
+  
+              <div class="user-input-box">
+  
+                <label for="team">team</label>
+  
+                <input type="text"
+                        id="team"
+                        name="team"
+                        required
+                        placeholder="0"/>
+              </div>
+  
+              <div class="user-input-box">
+  
+                <label for="over_time">over time</label>
+                <input type="number"
+                        id="over_time"
+                        name="over_time"
+                        placeholder="0"
+                        required/>
+              </div>
+  
+              <div class="user-input-box">
+  
+                <label for="targeted_productivity">targeted productivity</label>
+                <input type="text"
+                        id="targeted_productivity"
+                        name="targeted_productivity"
+                        placeholder="0.00"
+                        required/>
+              </div>
+  
+              <div class="user-input-box">
+  
+                  <label for="incentive">incentive</label>
+                  <input type="text"
+                          id="incentive"
+                          name="incentive"
+                          placeholder="0"
+                          required/>
+                </div>
+  
+                <div class="user-input-box">
+  
+                  <label for="smv">smv</label>
+                  <input type="text"
+                          id="smv"
+                          name="smv"
+                          placeholder="0.00"
+                          required/>
+                </div>
+  
+  
+                <div class="user-input-box">
+  
+                  <label for="idle_time">idle_time</label>
+                  <input type="text"
+                          id="idle_time"
+                          name="idle_time"
+                          placeholder="0"
+                          required/>
+                </div>
+  
+                <div class="user-input-box">
+  
+                  <label for="idle_men">idle_men</label>
+                  <input type="text"
+                          id="idle_men"
+                          name="idle_men"
+                          placeholder="0"
+                          required/>
+                </div>
+  
+                <div class="user-input-box">
+  
+                  <label for="no_of_style_change">no of style change</label>
+                  <input type="text"
+                          id="no_of_style_change"
+                          name="no_of_style_change"
+                          placeholder="0"
+                          required/>
+                </div>
+  
+              <div class="user-input-box">
+  
+                  <label for="no_of_workers">no of workers</label>
+                  <input type="text"
+                          id="no_of_workers"
+                          name="no_of_workers"
+                          placeholder="0.00"
+                          required/>
+              </div>
+  
+              <div class="user-input-box">
+  
+                  <label for="month" >month</label>
+                  <select id="month" name="month" required>
+                    <option value="" style="color: gray;" disabled selected>Select a month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                  </select>
+              </div>
+          </div>
+          <div class="form-submit-btn">
+            <input type="Submit" value="evaluate">
+          </div>
+        </form>
+      </div>
+
+</div>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
