@@ -1,7 +1,7 @@
-# Employee_performance_prediction
+# Employee performance prediction
 Employee performance prediction using machine learning involves developing a model that can assess and forecast an employee's future performance based on historical data and various influencing factors. The process begins with collecting relevant data, such as demographic details, job- related information, past performance metrics, and behavioral patterns. Once trained, the model can predict future performance, helping organizations identify high-performing employees, those who may need additional support, or even those at risk of leaving. 
 
-## How model works
+## How model works?
 -> Input Data:
 The first step involves gathering relevant data about employees.
 Enter all Employee related as instructed into the form below.
@@ -33,11 +33,11 @@ IDE: Jupyter notebook.
 Framework: Flask, pipe. 
 
 # Model's Output screenshots & Vedio
-##  Link:
+## Link:
 https://drive.google.com/drive/folders/1ruQO2nvQPrD6ipGfxU-XL3JWe7Or0h-a?usp=drive_link
 
 
-## Link:
+## Website Link:
 https://employee-performance-prediction-3.onrender.com/
 
 
