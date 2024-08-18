@@ -32,6 +32,12 @@ Training Models: Xgboost, Random Forest, Linear Regression.
 IDE: Jupyter notebook.
 Framework: Flask, pipe. 
 
+## Model's Output screenshots & Vedio
+#  Link:
+https://drive.google.com/drive/folders/1ruQO2nvQPrD6ipGfxU-XL3JWe7Or0h-a?usp=drive_link
+
+
 ## Link:
 https://employee-performance-prediction-3.onrender.com/
+
 
